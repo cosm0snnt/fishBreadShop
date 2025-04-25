@@ -28,7 +28,7 @@ class BreadShop:
             if bread_type in self.stock:
                 bread_count = int(input("추가할 개수를 입력하세요: "))
                 self.stock[bread_type] += bread_count
-                print(f"{bread_type}의 재고가 {bread_count}개 추가되어 현재 {stock[bread_type]}개 입니다.")
+                print(f"{bread_type}의 재고가 {bread_count}개 추가되어 현재 {self.stock[bread_type]}개 입니다.")
             else:
                 print("올바른 메뉴를 입력하세요.")
 
